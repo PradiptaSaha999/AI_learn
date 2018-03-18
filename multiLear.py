@@ -63,13 +63,13 @@ if __name__ == "__main__":
 
     #Seed the random number generator
     random.seed(1)
-
+    print("start")
     # Create layer 1 (4 neurons, each with 3 inputs)
     layer1 = NeuronLayer(4, 3)
-
+    # print(layer1.synaptic_weights)
     # Create layer 2 (a single neuron with 4 inputs)
     layer2 = NeuronLayer(1, 4)
-
+    # print(layer2.synaptic_weights)
     # Combine the layers to create a neural network
     neural_network = NeuralNetwork(layer1, layer2)
 
